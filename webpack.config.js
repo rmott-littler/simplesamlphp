@@ -80,6 +80,19 @@ module.exports = environment => {
                 filename: localConfig['css_filename'],
                 ignoreOrder: true
             }),
+            new CopyWebpackPlugin({
+                patterns: [
+                    {
+                        from: path.resolve(__dirname + '/node_modules/css.gg/icons/svg/clipboard.svg'),
+                        to: 'icons/[name][ext]'
+                    },
+                    {
+                        from: path.resolve(__dirname + '/node_modules/css.gg/icons/svg/copy.svg'),
+                        to: 'icons/[name][ext]'
+                    }
+                ]
+            })
+
         ]
     }
 };
