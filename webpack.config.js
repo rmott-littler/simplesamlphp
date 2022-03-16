@@ -80,14 +80,6 @@ module.exports = environment => {
                 filename: localConfig['css_filename'],
                 ignoreOrder: true
             }),
-            new CopyWebpackPlugin({
-                patterns: [
-                    {
-                        from: path.resolve(__dirname + '/node_modules/\@fortawesome/fontawesome-free/webfonts/fa-solid*'),
-                        to: 'fonts/[name][ext]'
-                    }
-                ]
-            })
         ]
     }
 };
