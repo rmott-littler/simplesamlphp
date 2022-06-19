@@ -18,10 +18,10 @@ Both files have the following format:
     ];
     /* ... */
 
-The entity ID must be a URI, that is unlikely to change for technical or political
-reasons. We recommend it to be a domain name, like such, if your organization's main
-domain is `example.org`. The URL does not have to resolve to actual content, it's
-just an identifier:
+The entity ID must be a URI, that is unlikely to change for technical or
+political reasons. We recommend it to be a domain name you own.
+The URL does not have to resolve to actual content, it's
+just an identifier. If your organization's domain is `example.org`:
 
     https://example.org/saml-idp
 

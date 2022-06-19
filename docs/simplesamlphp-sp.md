@@ -26,12 +26,12 @@ $config = [
     ],
 ];
 ```
-The entity ID must be a URI, that is unlikely to change for technical or political
-reasons. We recommend it to be a domain name, like above, if your organization's main
-domain is `example.org` and this SP is for the application `myapp`.
-The URL does not have to resolve to actual content, it's
-just an identifier. Hence you don't need to and should not change it if the actual domain
-of your application changes.
+The entity ID must be a URI, that is unlikely to change for technical or
+political reasons. We recommend it to be a domain name that you own.
+Like above, if your organization's main domain is `example.org` and this SP is
+for the application `myapp`.  The URL does not have to resolve to actual
+content, it's just an identifier. Hence you don't need to and should not change
+it if the actual domain of your application changes.
 
 For guidance in picking an entityID, see
 [InCommon's best practice](https://spaces.at.internet2.edu/display/federation/saml-metadata-entityid)
