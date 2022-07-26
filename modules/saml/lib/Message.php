@@ -848,7 +848,7 @@ class Message
                 continue;
             }
             $recipient = $scd->getRecipient();
-            if ($recipient !== null && $recipient !== $currentURL) {
+            if ($recipient !== null && $recipient !== '' && $recipient !== $currentURL) {
                 $lastError = 'Recipient in SubjectConfirmationData does not match the current URL. Recipient is ' .
                     var_export($recipient, true) . ', current URL is ' . var_export($currentURL, true) . '.';
                 continue;
